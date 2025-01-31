@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="/dist/styles.css" rel="stylesheet" />
+    <!-- <link href="/dist/styles.css" rel="stylesheet" type="text/css"/> -->
   </head>
   <body>
     <header class="fixed flex items-center pt-16 px-28 gap-16 text-lg z-10">
       <h1 class="cursor-pointer">
         <img src="/src/assets/imgs/logo.svg" alt="logo" />
       </h1>
-      
+
       <nav>
-        <ul class="flex gap-10 text-white font-semibold text-xl">
+        <ul class="flex gap-10 text-white font-semibold typography-sm">
           <li>
             <a href="#" 
               class="
@@ -87,150 +87,158 @@
       </nav>
     </header>
 
-    <main class="grid grid-cols-1 grid-rows-3 h-svh">
-      <section class="row-span-2">
-        <div class="swiper w-full h-full relative">
+    <main class="grid grid-cols-1 grid-rows-[75vh_25vh]  2xl:grid-rows-[70vh_30vh] max-h-screen overflow-y-hidden">
+      <section class="w-full h-full">
+        <div class="swiper relative w-full h-full">
           <div
-            class="swiper-wrapper *:!grid *:!grid-cols-[1fr_42vw] 2xl:*:!grid-cols-[1fr_40vw]"
+            class="swiper-wrapper w-full h-full"
           >
             <div class="swiper-slide">
-              <div class="">
-                <img
-                  class="object-cover"
-                  src="/src/assets/imgs/desktop-image-hero-1.jpg"
-                />
-              </div>
-              <div class="flex justify-center items-center h-full">
-                <div class="w-full max-w-[80%] 2xl:max-w-[70%] p-2 space-y-8">
-                  <h2 class="title-md">
-                    Discover innovative<br />
-                    ways to decorate
-                  </h2>
-                  <p class="typography-md">
-                    We provide unmatched quality, comfort, and style for
-                    property owners across the country. Our experts combine form
-                    and function in bringing your vision to life. Create a room
-                    in your own style with our collection and make your property
-                    a reflection of you and what you love.
-                  </p>
-                  <div
-                    class="
-                      flex 
-                      items-center 
-                      max-w-max 
-                      space-x-4 
-                      cursor-pointer 
-                      relative 
-                      hover:after:bg-white 
-                      hover:after:absolute 
-                      hover:after:size-full 
-                      hover:after:top-0 
-                      hover:after:left-0 
-                      hover:after:opacity-30"
-                  >
-                    <a
-                      class="typography-md !leading-none tracking-[1rem] font-[500] text-black duration-300"
-                      >SHOP NOW</a
+              <div class="!grid !grid-cols-[1fr_42%] 2xl:!grid-cols-[1fr_40%] w-full h-full max-h-full">
+                <div class="max-h-full">
+                  <img
+                    class="object-cover max-h-full"
+                    src="/src/assets/imgs/desktop-image-hero-1.jpg"
+                  />
+                </div>
+                <div class="flex justify-center items-center h-full">
+                  <div class="w-full max-h-max max-w-[80%] md:max-w-[90%] 2xl:max-w-[70%] p-2 md:p-0 space-y-8">
+                    <h2 class="title-md">
+                      Discover innovative<br />
+                      ways to decorate
+                    </h2>
+                    <p class="typography-md">
+                      We provide unmatched quality, comfort, and style for
+                      property owners across the country. Our experts combine form
+                      and function in bringing your vision to life. Create a room
+                      in your own style with our collection and make your property
+                      a reflection of you and what you love.
+                    </p>
+                    <div
+                      class="
+                        flex 
+                        items-center 
+                        max-w-max 
+                        space-x-4 
+                        cursor-pointer 
+                        relative 
+                        hover:after:bg-white 
+                        hover:after:absolute 
+                        hover:after:size-full 
+                        hover:after:top-0 
+                        hover:after:left-0 
+                        hover:after:opacity-30"
                     >
-                    <div class="w-10">
-                      <img src="/src/assets/imgs/icon-arrow.svg" />
+                      <a
+                        class="typography-md !leading-none tracking-[1rem] font-[500] text-black duration-300"
+                        >SHOP NOW</a
+                      >
+                      <div class="w-10">
+                        <img src="/src/assets/imgs/icon-arrow.svg" />
+                      </div>
                     </div>
                   </div>
-                </div>
+                </div>               
               </div>
             </div>
-            <div class="swiper-slide">
-              <div>
-                <img
-                  class="object-cover"
-                  src="/src/assets/imgs/desktop-image-hero-2.jpg"
-                />
-              </div>
-              <div class="flex items-center h-full">
-                <div
-                  class="w-full max-w-[80%] 2xl:max-w-[70%] my-0 mx-auto space-y-8"
-                >
-                  <h2 class="title-md">
-                    We are available all<br />
-                    across the globe
-                  </h2>
-                  <p class="typography-md">
-                    With stores all over the world, it's easy for you to find
-                    furniture for your home or place of business. Locally, we’re
-                    in most major cities throughout the country. Find the branch
-                    nearest you using our store locator. Any questions? Don't
-                    hesitate to contact us today.
-                  </p>
+            <div class="swiper-slide ">
 
+              <div class="!grid !grid-cols-[1fr_42%] 2xl:!grid-cols-[1fr_40%] w-full h-full">
+                <div>
+                  <img
+                    class="object-cover"
+                    src="/src/assets/imgs/desktop-image-hero-2.jpg"
+                  />
+                </div>
+                <div class="flex justify-center items-center h-full">
                   <div
-                    class="
-                      flex 
-                      items-center 
-                      max-w-max 
-                      space-x-4 
-                      cursor-pointer 
-                      relative 
-                      hover:after:bg-white 
-                      hover:after:absolute 
-                      hover:after:size-full 
-                      hover:after:top-0 
-                      hover:after:left-0 
-                      hover:after:opacity-30"
+                    class="w-full max-w-[80%] 2xl:max-w-[70%] my-0 space-y-8"
                   >
-                    <a 
-                      class="typography-md !leading-none tracking-[1rem] font-[500] text-black duration-300"
-                      >SHOP NOW</a
+                    <h2 class="title-md">
+                      We are available all<br />
+                      across the globe
+                    </h2>
+                    <p class="typography-md">
+                      With stores all over the world, it's easy for you to find
+                      furniture for your home or place of business. Locally, we’re
+                      in most major cities throughout the country. Find the branch
+                      nearest you using our store locator. Any questions? Don't
+                      hesitate to contact us today.
+                    </p>
+  
+                    <div
+                      class="
+                        flex 
+                        items-center 
+                        max-w-max 
+                        space-x-4 
+                        cursor-pointer 
+                        relative 
+                        hover:after:bg-white 
+                        hover:after:absolute 
+                        hover:after:size-full 
+                        hover:after:top-0 
+                        hover:after:left-0 
+                        hover:after:opacity-30"
                     >
-                    <div class="w-10">
-                      <img src="/src/assets/imgs/icon-arrow.svg" />
+                      <a 
+                        class="typography-md !leading-none tracking-[1rem] font-[500] text-black duration-300"
+                        >SHOP NOW</a
+                      >
+                      <div class="w-10">
+                        <img src="/src/assets/imgs/icon-arrow.svg" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div>
-                <img
-                  class="object-cover"
-                  src="/src/assets/imgs/desktop-image-hero-3.jpg"
-                />
-              </div>
-              <div class="flex items-center h-full">
-                <div
-                  class="w-full max-w-[80%] 2xl:max-w-[70%] my-0 mx-auto p-2 space-y-8"
-                >
-                  <h2 class="title-md">
-                    Manufactured with<br />
-                    the best materials
-                  </h2>
-                  <p class="typography-md">
-                    Our modern furniture store provide a high level of quality.
-                    Our company has invested in advanced technology to ensure
-                    that every product is made as perfect and as consistent as
-                    possible. With three decades of experience in this industry,
-                    we understand what customers want for their home and office.
-                  </p>
+              <div class="!grid !grid-cols-[1fr_42%] 2xl:!grid-cols-[1fr_40%] w-full h-full">
+
+                <div>
+                  <img
+                    class="object-cover"
+                    src="/src/assets/imgs/desktop-image-hero-3.jpg"
+                  />
+                </div>
+                <div class="flex items-center h-full">
                   <div
-                    class="
-                      flex 
-                      items-center 
-                      max-w-max 
-                      space-x-4 
-                      cursor-pointer 
-                      relative 
-                      hover:after:bg-white 
-                      hover:after:absolute 
-                      hover:after:size-full 
-                      hover:after:top-0 
-                      hover:after:left-0 
-                      hover:after:opacity-30"
+                    class="w-full max-w-[80%] 2xl:max-w-[70%] my-0 mx-auto p-2 space-y-8"
                   >
-                    <a
-                      class="typography-md !leading-none tracking-[1rem] font-[500] text-black duration-300"
-                      >SHOP NOW</a
+                    <h2 class="title-md">
+                      Manufactured with<br />
+                      the best materials
+                    </h2>
+                    <p class="typography-md">
+                      Our modern furniture store provide a high level of quality.
+                      Our company has invested in advanced technology to ensure
+                      that every product is made as perfect and as consistent as
+                      possible. With three decades of experience in this industry,
+                      we understand what customers want for their home and office.
+                    </p>
+                    <div
+                      class="
+                        flex 
+                        items-center 
+                        max-w-max 
+                        space-x-4 
+                        cursor-pointer 
+                        relative 
+                        hover:after:bg-white 
+                        hover:after:absolute 
+                        hover:after:size-full 
+                        hover:after:top-0 
+                        hover:after:left-0 
+                        hover:after:opacity-30"
                     >
-                    <div class="w-10">
-                      <img src="/src/assets/imgs/icon-arrow.svg" />
+                      <a
+                        class="typography-md !leading-none tracking-[1rem] font-[500] text-black duration-300"
+                        >SHOP NOW</a
+                      >
+                      <div class="w-10">
+                        <img src="/src/assets/imgs/icon-arrow.svg" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -239,18 +247,7 @@
           </div>
           <div
             class="
-              flex 
-              absolute 
-              h-[5rem] 
-              w-[14vw] 
-              2xl:w-[10vw] 
-              bottom-0 
-              right-[45vw] 
-              2xl:right-[40vw] 
-              translate-x-[17vw] 
-              2xl:translate-x-[10vw] 
-              z-10 
-              bg-black"
+             w-[14.5vw] 2xl:w-[10vw] h-[8vh] 2xl:h-[9vh] absolute bottom-0  right-[27.5vw] 2xl:right-[30vw] flex bg-black z-10"
           >
             <span
               class="
@@ -301,15 +298,15 @@
       </section>
 
       <section
-        class="grid grid-cols-[1fr_45vw_1fr] 2xl:grid-cols-[1fr_40vw_1fr] row-span-1"
+        class="grid grid-cols-[1fr_45vw_1fr] 2xl:grid-cols-[1fr_40vw_1fr] w-full h-full"
       >
         <div class="h-full">
           <img src="/src/assets/imgs/image-about-dark.jpg" />
         </div>
-        <div class="flex flex-col justify-center h-full w-full">
-          <div class="max-w-[82%] w-full mx-auto">
+        <div class="flex flex-col justify-center items-center h-full w-full">
+          <div class="max-w-[95%] lg:max-w-[82%] w-full">
             <h2 class="title-sm spac tracking-[.5rem]">ABOUT OUR FURNITURE</h2>
-            <p class="typography-md mt-5">
+            <p class="typography-md lg:mt-5 mt-2">
               Our multifunctional collection blends design and function to suit
               your individual taste. Make each room unique, or pick a cohesive
               theme that best express your interests and what inspires you. Find

@@ -1,24 +1,29 @@
 import '/src/assets/css/style.css'
 import Swiper from 'swiper'
-import { Navigation } from 'swiper/modules'
+import { Navigation, EffectFade } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation],
-  loop: true,
-  spaceBetween: 100,
+  modules: [Navigation, EffectFade],
+  // spaceBetween: 100,
   speed: 500,
+  loop: true,
+  effect: 'fade',
+  navigation: {
+    nextEl: '.slider-btn-next',
+    prevEl: '.slider-btn-previous',
+  },
 })
 
-document.querySelector('.slider-btn-next').addEventListener('click', () => {
-  swiper.slideNext()
-})
+// document.querySelector('.slider-btn-next').addEventListener('click', () => {
+//   swiper.slideNext()
+// })
 
-document.querySelector('.slider-btn-previous').addEventListener('click', () => {
-  swiper.slidePrev()
-})
+// document.querySelector('.slider-btn-previous').addEventListener('click', () => {
+//   swiper.slidePrev()
+// })
 
 // console.log(Swiper.Navigation);
 
