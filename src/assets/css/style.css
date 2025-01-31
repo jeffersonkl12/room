@@ -36,7 +36,7 @@ img {
   }
 
   .title-md {
-    font-size: clamp(2.5rem, 0.7rem + 2.25vw, 3.4rem);
+    font-size: clamp(2.2rem, -0.2rem + 3vw, 3.4rem);
     font-weight: 700;
     line-height: 1;
     color: var(--color-black);
@@ -54,15 +54,9 @@ img {
     line-height: 1.2;
     color: var(--color-dark-gray);
   }
+}
 
-  .wrapper {
-    width: 7vw; /* Mantém um tamanho relativo ao viewport */
-    height: 5vh;
-    position: absolute;
-    bottom: 0;
-    right: 27.3vw; /* Mantém alinhado independentemente do tamanho da tela */
-    display: flex;
-    background-color: var(--color-black);
-    z-index: 10;
-  }
+/* css para reoslver bug do swiper */
+.swiper-slide {
+  background-color: #fff;
 }
